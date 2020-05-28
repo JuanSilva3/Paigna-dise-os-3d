@@ -1,0 +1,230 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+   background: cadetblue;
+}
+
+h1{
+   text-align: center;
+    margin-bottom: 50px;
+}
+
+  .toolbar  {
+    margin: auto;
+    position: relative;
+    margin-top: 50px;   
+      
+  }
+  .toolbar figure{
+    margin: auto;
+    
+  }
+.toolbar img{
+    display: block;
+    margin: auto;
+    background-position: center;
+    
+}
+div#body
+{
+    margin: auto;
+    margin-top: 20px;
+   
+    width: auto;
+    height: 150px;
+}
+.button{
+    float: left;
+    position: initial;
+    width: 50px;
+    height: 50px;
+    background-color:#234F66 ;
+    transition: .2s;
+    transform: translate(0,0) rotateY(0) skewY(0);
+    transition: .2s;
+    margin: 30px;
+    margin-top: 200px;
+
+}
+.button:hover {
+    transform: translate(-15px,-5px) rotateY(-15deg) skewY(-10deg);
+}
+i{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    z-index: 10;
+    transition: .2s;
+}
+.button:hover i{
+    color: white;
+}
+.button span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    transform: translate(0,0);
+}
+
+.button span:nth-of-type(4){
+    transform: translate(-4px,-4px);
+    transition: .2s;
+    z-index: 0;
+    opacity: .5;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+
+}
+.button:hover span:nth-of-type(1){
+    transform: translate(8px,4px);
+    background-color: #2F6C8D;
+}
+.button:hover span:nth-of-type(2){
+    transform: translate(16px,8px);
+    background-color:#3A8AB5;
+}
+.button:hover span:nth-of-type(3){
+    transform: translate(24px,12px);
+    background-color: #3C8FBC;
+}
+.button span:nth-of-type(4)::before{
+    content: '';
+    position: absolute;
+    width: 0;height: 100%;
+    top: 0;left: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: .2s;
+}
+.button span:nth-of-type(4)::after{
+    content: '';
+    position: absolute;
+    width: 100%;height: 0;
+    top: 100%;left: 0;
+    border-right: 1px solid rgb(255, 255, 255);
+    transition: .2s;
+}
+
+.button:hover span:nth-of-type(4)::before{
+width: 100%;
+transition-delay: .4s;
+}
+.button:hover span:nth-of-type(4)::after{
+    height: 100%;
+    transition-delay: .6s;
+    top: 0;
+    }
+    .button:hover span:nth-of-type(4){
+        transform: translate(30px,10px) ;
+        transition-delay: .1s;
+    }
+
+ul{
+   
+    margin: auto;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform:translate(-50%-50%);
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+ul li {
+    list-style: none;
+    margin:20px;
+}
+
+ul li a .fa
+{
+    font-size: 50%;
+    color:black;
+    line-height: 80px;
+    transition: .5s;
+    padding-right: 14px;
+}
+ul li a span{
+    padding: 0;
+    margin:0;
+    position: absolute;
+    top: 110px;
+    color: #333;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+
+ul li a{
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skewX(25deg) translate(0,0);
+    transition: .5 seg;
+    box-shadow: -20px 20px 10px rgb(0,0,0,.5);
+}
+ul li a:before{
+    content:'';
+    position:absolute;
+    top:10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+ul li a:after{
+    content:'';
+    position:absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewx(-45deg);
+}
+ul li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+    box-shadow: -50px 50px 50px rgb(0,0,0,.5);
+}
+ul li:hover .fa {
+color:#fff;
+}
+
+ul li:hover span {
+   color: #fff;
+    }
+
+ul li:hover a{
+    background:#2F6C8D;
+}
+ul li:hover a::before{
+    background: #3A8AB5;
+}
+ul li:hover a::after{
+    background: #3C8FBC;
+}
+
+
+
+
+
